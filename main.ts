@@ -7,6 +7,11 @@
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
+// Why this joke works: the paranoia symptom becomes the punchline.
+// The setup asks about books on paranoia; the librarian's whisper
+// answers by behaving as if the paranoia is justified — "they're right
+// behind you" — so the symptom itself lands the joke, delivered
+// straight-faced, which is exactly the deadpan dad-joke register.
 const JOKE =
   "I asked the librarian if the library had books on paranoia. She whispered, 'They're right behind you.'";
 
@@ -20,6 +25,11 @@ if (codePoints < 1 || codePoints > 200) {
 }
 if (!JOKE.trim()) {
   console.error("Joke is only whitespace.");
+  process.exit(1);
+}
+// A dad joke is one line: a stray newline would split the entry.
+if (JOKE.includes("\n") || JOKE.includes("\r")) {
+  console.error("Joke must be a single line (no newline characters).");
   process.exit(1);
 }
 
