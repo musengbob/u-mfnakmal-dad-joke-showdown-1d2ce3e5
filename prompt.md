@@ -1,0 +1,1 @@
+The entry is a single classic dad joke built on a paranoia pun: a customer asks a librarian for books on paranoia, and she whispers that "they're right behind you," turning the very symptom being asked about into the punchline, so the joke lands on the first read with no explanation needed and reads naturally aloud in a father's straight-faced delivery.
